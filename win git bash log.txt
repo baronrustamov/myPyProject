@@ -1,0 +1,10 @@
+18949092@CAB-WSN-0029549 MINGW64 ~/Desktop/myPyProject (main)
+$ eval `ssh-agent.exe`
+Agent pid 1295
+
+18949092@CAB-WSN-0029549 MINGW64 ~/Desktop/myPyProject (main)
+$ ssh-add id_rsa
+Identity added: id_rsa (id_rsa)
+
+18949092@CAB-WSN-0029549 MINGW64 ~/Desktop/myPyProject (main)
+$ git pull origin main

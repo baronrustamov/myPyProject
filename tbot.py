@@ -15,6 +15,9 @@ import datetime  # module of python to get the date and time
 from urllib.error import URLError, HTTPError
 from urllib.request import Request, urlopen, ssl, socket
 from time import strftime
+import logging
+logging.basicConfig(level=logging.DEBUG,
+                    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 
 import random
 import telebot
@@ -115,6 +118,8 @@ def findDay(date):
     born = datetime.datetime.strptime(date, '%d %m %Y').weekday() #this statement returns an integer corresponding to the day of the week
     return (calendar.day_name[born]) #this statement returns the corresponding day name to the integer generated in the previous statement
 
+logger = logging.getLogger()
+logger.setLevel(logging.INFO)
 
 #WhatDay
 date = '03 03 2021' #this is the input date
@@ -182,6 +187,7 @@ def callback_worker(call):
         bot.send_message(call.message.chat.id, msg)
 '''
 
+print(bot.get_me())
 print("Starting bot")
 
 @bot.message_handler(commands=['start'])

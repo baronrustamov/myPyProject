@@ -1,6 +1,6 @@
 import telebot
 
-bot = telebot.TeleBot('<ваш токен>')
+bot = telebot.TeleBot('251180362:AAG2Y1VTSazHOoEFhFmJVpnhvnc5GiqEQq0')
 keyboard1 = telebot.types.ReplyKeyboardMarkup()
 keyboard1.row('Привет', 'Пока')
 

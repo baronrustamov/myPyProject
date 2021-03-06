@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Multiquestions/.idea/Multiquestions.iml" filepath="$PROJECT_DIR$/../Multiquestions/.idea/Multiquestions.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/myPyProject.iml" filepath="$PROJECT_DIR$/.idea/myPyProject.iml" />
       <module fileurl="file://$PROJECT_DIR$/../rules-bot/.idea/rules-bot.iml" filepath="$PROJECT_DIR$/../rules-bot/.idea/rules-bot.iml" />
       <module fileurl="file://$PROJECT_DIR$/../website/.idea/website.iml" filepath="$PROJECT_DIR$/../website/.idea/website.iml" />

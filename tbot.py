@@ -118,8 +118,19 @@ def findDay(date):
     born = datetime.datetime.strptime(date, '%d %m %Y').weekday() #this statement returns an integer corresponding to the day of the week
     return (calendar.day_name[born]) #this statement returns the corresponding day name to the integer generated in the previous statement
 
-logger = logging.getLogger()
-logger.setLevel(logging.INFO)
+if os.environ.get('ROOLSBOT_DEBUG'):
+    logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+                        level=logging.DEBUG)
+else:
+    logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+                        level=logging.INFO)
+    aps_logger = logging.getLogger('apscheduler')
+    aps_logger.setLevel(logging.WARNING)
+
+logger = logging.getLogger(__name__)
+
+#logger = logging.getLogger()
+#logger.setLevel(logging.INFO)
 
 #WhatDay
 date = '03 03 2021' #this is the input date
